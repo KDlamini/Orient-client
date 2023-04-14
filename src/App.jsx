@@ -1,9 +1,15 @@
-function App() {
+import Home from './pages/Home';
+import Customizer from './pages/Customizer';
+import Canvas from './canvas/index';
+
+const App = () => {
 
   return (
-    <div className="App">
-    <h1 className="head-text">ThreeJS React App</h1>
-    </div>
+    <main className="app transition-all ease-in">
+      <Home />
+      <Canvas />
+      <Customizer />
+    </main>
   )
 }
 
